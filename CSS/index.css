@@ -6,7 +6,7 @@
 :root {
   --pry-color: #0f1b37;
 }
-a{
+a {
   text-decoration: none;
 }
 body {
@@ -51,13 +51,13 @@ body {
   border: none;
   background: none;
 }
-.intro{
+.intro {
   position: relative;
   height: 100vh;
   width: 100%;
 }
-.intro img{
-  opacity: .5;
+.intro img {
+  opacity: 0.5;
   max-height: 100vh;
   width: 100vw;
 }
@@ -78,22 +78,77 @@ body {
   font-weight: bold;
   margin: 1rem 0;
 }
-.btn{
+.btn {
   background-color: var(--pry-color);
   color: #efefef;
 }
-.btn:hover{
+.btn:hover {
   text-decoration: underline;
   color: #efefef;
 }
-.hero{
+.hero {
   padding: 30px;
   text-align: center;
 }
-.hero-sub{
+.hero-sub {
   margin: 4rem auto;
   padding: 30px;
   text-align: left;
+}
+.practice-area,
+.testimonials {
+  padding: 50px;
+  margin: 1rem auto;
+  text-align: center;
+}
+.area {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 300px;
+  width: 300px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.area img {
+  width: fit-content;
+  height: 100px;
+}
+.testimonials {
+  background-color: var(--pry-color);
+  color: #efefef;
+}
+
+.carousel-item {
+  width: 50%;
+  padding: 20px;
+  margin: 3rem auto;
+}
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.user {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+}
+.user img{
+  height: 50px;
+  width: auto;
+  border: 2px solid;
+  border-radius: 50%;
+}
+.user-info{
+  margin-left: 1rem;
+  text-align: left;
+font-weight: bold;
+}
+.user-info small{
+  font-size: .8rem;
+opacity: .3;
 }
 @media only screen and (max-width: 800px) {
   .toggler {

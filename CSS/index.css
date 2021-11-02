@@ -58,7 +58,7 @@ body {
 }
 .intro {
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .intro img{
   opacity: .5;

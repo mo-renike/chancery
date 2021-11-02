@@ -14,11 +14,14 @@ body {
   color: var(--pry-color);
   font-size: 18px;
   overflow-x: hidden;
-font-family: 'Montserrat Alternates', sans-serif;}
+  font-family: "Montserrat Alternates", sans-serif;
+}
 .nav {
   padding: 20px;
   justify-content: space-between;
   transition: all 1s ease;
+  background-color: rgba(243, 243, 243, 0.2);
+  width:100vw;
 }
 .nav-links {
   list-style: none;
@@ -54,15 +57,20 @@ font-family: 'Montserrat Alternates', sans-serif;}
   background: none;
 }
 .intro {
-  background-image: url(../img/teahub.io-legal-wallpaper-819891.png);
-  background-size: cover;
+  position: relative;
   width: 100%;
+}
+.intro img{
+  opacity: .5;
 }
 .intro-text {
   padding: 30px;
   text-align: center;
   display: flex;
-  margin: 5rem 0;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  position: absolute;
   flex-direction: column;
   width: 30%;
   justify-content: space-evenly;

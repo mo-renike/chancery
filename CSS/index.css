@@ -169,4 +169,7 @@ opacity: .3;
   .show {
     display: flex;
   }
+  .carousel-item {
+  width: 100%;
+}
 }

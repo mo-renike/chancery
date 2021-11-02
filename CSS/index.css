@@ -86,12 +86,12 @@ body {
   text-align: left;
 }
 .practice-area,
-.testimonials {
+.testimonials, .blog-area {
   padding: 50px;
   margin: 1rem auto;
   text-align: center;
 }
-.area {
+.area, .blog-post {
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 300px;
   margin: 2rem 1rem;
@@ -148,7 +148,7 @@ body {
 }
 .outro img{
   width: 100%;
-  opacity: .3;
+  opacity: .4;
 }
 .outro-text{
   padding: 20px;
@@ -156,6 +156,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 800px) {
   .toggler {

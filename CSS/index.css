@@ -62,6 +62,7 @@ body {
 }
 .intro img{
   opacity: .5;
+  width: 100%;
 }
 .intro-text {
   padding: 30px;

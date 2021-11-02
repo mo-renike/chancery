@@ -16,10 +16,8 @@ body {
 }
 .nav {
   padding: 20px;
-  position: absolute;
   justify-content: space-between;
   transition: all 1s ease;
-  top: 0;
 }
 .nav-links {
   list-style: none;
@@ -52,19 +50,11 @@ body {
   background: none;
 }
 .intro {
-  position: relative;
-  height: 100vh;
+  background-image: url(../img/teahub.io-legal-wallpaper-819891.png);
+  background-size: cover;
   width: 100%;
 }
-.intro img {
-  opacity: 0.5;
-  max-height: 100vh;
-  width: 100vw;
-}
 .intro-text {
-  position: absolute;
-  right: 10%;
-  bottom: 1rem;
   padding: 30px;
   text-align: center;
   display: flex;
@@ -104,12 +94,13 @@ body {
 .area {
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 300px;
+  margin: 2rem  1rem;
   width: 300px;
-  margin: 3rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .area img {
   width: fit-content;

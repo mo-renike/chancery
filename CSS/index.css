@@ -94,7 +94,7 @@ body {
 .area {
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 300px;
-  margin: 2rem  1rem;
+  margin: 2rem 1rem;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -126,20 +126,36 @@ body {
   margin: 3rem auto;
   justify-content: center;
 }
-.user img{
+.user img {
   height: 50px;
   width: auto;
   border: 2px solid;
   border-radius: 50%;
 }
-.user-info{
+.user-info {
   margin-left: 1rem;
   text-align: left;
-font-weight: bold;
+  font-weight: bold;
 }
-.user-info small{
-  font-size: .8rem;
-opacity: .3;
+.user-info small {
+  font-size: 0.8rem;
+  opacity: 0.3;
+}
+.outro{
+  padding: 0;
+  margin-top: 0;
+  position: relative;
+}
+.outro img{
+  width: 100%;
+  opacity: .3;
+}
+.outro-text{
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 @media only screen and (max-width: 800px) {
   .toggler {
@@ -170,6 +186,6 @@ opacity: .3;
     display: flex;
   }
   .carousel-item {
-  width: 100%;
-}
+    width: 100%;
+  }
 }

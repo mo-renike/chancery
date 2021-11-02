@@ -95,6 +95,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 300px;
   margin: 2rem 1rem;
+  padding: 20px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -102,6 +103,7 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .area img {
   width: fit-content;
   height: 100px;
@@ -110,7 +112,21 @@ body {
   background-color: var(--pry-color);
   color: #efefef;
 }
-
+.blog-post{
+  padding: 0;
+  height: 400px;
+}
+.blog-post img{
+  height: 50%;
+  width: 100%;
+}
+.blog-text{
+  background-color: rgba(240, 240, 240, 0.5);
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  height: 50%;
+}
 .carousel-item {
   width: 50%;
   padding: 20px;

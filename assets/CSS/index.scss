@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 :root {
   --pry-color: #0f1b37;
@@ -10,33 +11,32 @@
 a {
   text-decoration: none;
 }
-h1{
+h1 {
   font-size: 4rem;
 }
-h2{
+h2 {
   font-size: 3rem;
 }
-h3{
+h3 {
   font-size: 2.5rem;
 }
-h4{
+h4 {
   font-size: 1.7rem;
 }
-h5{
+h5 {
   font-size: 1.2rem;
 }
 body {
   color: var(--pry-color);
   font-size: 18px;
   overflow-x: hidden;
-  font-family: "Montserrat Alternates", sans-serif;
 }
 .nav {
-  padding: 20px;
+  padding: 0px 20px;
   justify-content: space-between;
-  transition: all 1s ease;
+  align-items: center;
   background-color: rgba(243, 243, 243, 0.2);
-  width:100vw;
+  width: 100vw;
 }
 .nav-links {
   list-style: none;
@@ -62,6 +62,7 @@ body {
 .nav-links li:hover,
 .logo:hover {
   transform: scale(1.1);
+  transition: 0.4s ease-in;
 }
 .toggler {
   color: inherit;
@@ -71,13 +72,16 @@ body {
   border: none;
   background: none;
 }
+// ======= Intro ====== //
 .intro {
   position: relative;
-  width: 100vw;
-}
-.intro img{
-  opacity: .5;
   width: 100%;
+  height: 75vh;
+}
+.intro img {
+  opacity: #0f1b37ce;
+  width: 100%;
+  height: 100%;
 }
 .intro-text {
   padding: 30px;
@@ -88,33 +92,39 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   justify-content: space-evenly;
 }
 
 .intro-text > * {
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 0.4rem 0;
 }
 .btn {
   background-color: var(--pry-color);
   color: #efefef;
+  align-self: center;
 }
 .btn:hover {
   text-decoration: underline;
   color: #efefef;
 }
+//====== Hero Section =======//
+
 .hero {
   padding: 30px;
   text-align: center;
+  width: 100%;
 }
+
 .hero-sub {
   margin: 4rem auto;
   padding: 30px;
   text-align: left;
 }
+// ====== Practice Area ===== //
+
 .practice-area,
-.testimonials,
 .blog-area {
   padding: 50px;
   margin: 1rem auto;
@@ -138,10 +148,16 @@ body {
   width: fit-content;
   height: 100px;
 }
-.testimonials {
-  background-color: var(--pry-color);
-  color: #efefef;
+
+.area,
+.blog-post {
+  margin: 8px auto;
 }
+
+.area-row {
+  margin-bottom: 15px;
+}
+
 .blog-post {
   padding: 0;
   height: 400px;
@@ -187,15 +203,24 @@ body {
   font-size: 0.8rem;
   opacity: 0.3;
 }
-.outro {
+
+// outro
+
+.outro-desktop {
   padding: 0;
   margin-top: 0;
   position: relative;
+  height: 580px;
+  background-image: url(../img/group.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.outro img {
-  width: 100%;
-  opacity: 0.4;
+.outro-mobile {
+  display: none;
 }
+
+
 .outro-text {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -204,6 +229,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// outro
 footer {
   background-color: var(--pry-color);
   color: #efefef;
@@ -217,19 +244,35 @@ footer a {
 footer ul li {
   padding: 10px;
 }
+
+  footer > * {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+  }
+
 @media only screen and (max-width: 800px) {
   .toggler {
     display: block;
     position: absolute;
     right: 1em;
   }
+
   .intro-text {
     width: 100%;
+    left: 50%;
+    right: 50%;
+  }
+
+  .intro-text > * {
+    text-align: center;
+    font-size: 18px;
   }
   .nav {
     position: relative;
     justify-content: space-between;
     text-align: center;
+    padding: 0 8px;
   }
   .nav-links {
     height: 100vh;
@@ -242,10 +285,91 @@ footer ul li {
   .nav-links li {
     margin: 1em auto;
   }
+
+  .hero {
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-sub {
+    margin: 5px auto;
+    padding: 8px 18px;
+  }
+  .hero-sub p {
+    font-size: 15px;
+  }
+
+  // prctice area
+  .section_title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+
+  .area h4{
+      font-size: 20px;
+      font-weight: 700;
+  }
+
+  .area p{
+      font-size: 16px;
+  }
+
   .show {
     display: flex;
   }
-  .carousel-item {
+
+  .outro-desktop {
+    display: none;
+  }
+  .outro-mobile {
+      display: block;
+    padding: 0px;
+    margin-top: 0;
+    position: relative;
     width: 100%;
   }
+
+  .outro-mobile img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+  .outro-text {
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .outro-text h3 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .blog-text h4{
+      font-size: 20px;
+      font-weight: 700;
+  }
+
+  .blog-text p{
+      font-size: 16px;
+  }
+
+  footer > * {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+  }
+  footer{
+      width: 100%;
+  }
+
+  
 }

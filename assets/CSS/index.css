@@ -60,17 +60,18 @@ body {
   display: flex;
 }
 
-.logo {
+.navbar-brand {
   text-align: center;
   font-weight: bold;
 }
 
 .nav-link {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.nav-links a,
-.logo {
+.nav-link,
+.navbar-brand {
   color: var(--pry-color);
   text-decoration: none;
   font-size: 1rem;
@@ -79,22 +80,14 @@ body {
   text-transform: uppercase;
 }
 
-.nav-links li:hover,
-.logo:hover {
+.nav-link:hover,
+.navbar-brand:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
 }
 
-.toggler {
-  color: inherit;
-  font-size: 1.4em;
-  display: none;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
 
 .intro {
   position: relative;

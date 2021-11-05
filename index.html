@@ -18,40 +18,7 @@
     <link rel="stylesheet" href="./assets/CSS/index.css" />
   </head>
   <body>
-    <!-- Nav Start -->
-    <!-- <nav class="nav container-fluid">
-        <a href="index.html" class="logo">
-          <h5>
-            Chancery <br />
-            strand & Lion <br />
-            associates
-          </h5>
-        </a>
-
-        <button class="toggler">
-          <i class="fa fa-bars"></i>
-        </button>
-
-        <ul class="nav-links">
-          <li>
-            <a class="active nav-link" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Our Lawyers</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Articles</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
-        </ul>
-      </nav> -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><h5>
             Chancery <br />
@@ -71,8 +38,46 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
+<!-- The overlay -->
+<div class="container-fluid">
+  <nav class="navigation"><a class="navbar-brand" href="index.html"><h5>
+    Chancery <br />
+    strand & Lion <br />
+    associates
+  </h5></a>
+  <div class="navbar-nav">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    <a class="nav-link" href="#">About us</a>
+    <a class="nav-link" href="#">our Lawyers</a>
+    <a class="nav-link" href="#">Articles</a>
+    <a class="nav-link" href="#">contact us</a>
+  </div> <!-- Use any element to open/show the overlay navigation menu -->
+<button><span onclick="openNav()"><i class="fa fa-bars toggle-btn"></i></span></button>
+</nav>
+ 
+
+<div id="myNav" class="overlay">
+ 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+    <a href="#">About us</a>
+    <a href="#">our lawyers</a>
+    <a href="#">articles</a>
+    <a href="#">Contact us</a>
+  </div>
+
+</div>
+
+
+
+</div>
       <!-- Nav END -->
     <div class="intro">
       <img class="img-fluid" src="./assets/img/teahub.io-legal-wallpaper-819891.png" alt="photo lady-justice">

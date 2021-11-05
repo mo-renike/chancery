@@ -7,6 +7,10 @@
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 :root {
   --pry-color: #0f1b37;
 }
@@ -60,18 +64,17 @@ body {
   display: flex;
 }
 
-.navbar-brand {
+.logo {
   text-align: center;
   font-weight: bold;
 }
 
 .nav-link {
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-.nav-link,
-.navbar-brand {
+.nav-links a,
+.logo {
   color: var(--pry-color);
   text-decoration: none;
   font-size: 1rem;
@@ -80,14 +83,22 @@ body {
   text-transform: uppercase;
 }
 
-.nav-link:hover,
-.navbar-brand:hover {
+.nav-links li:hover,
+.logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
 }
 
+.toggler {
+  color: inherit;
+  font-size: 1.4em;
+  display: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 
 .intro {
   position: relative;
@@ -312,6 +323,20 @@ footer > * {
 }
 
 @media only screen and (max-width: 800px) {
+  body > * {
+    overflow-x: hidden;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .toggler {
     display: block;
     position: absolute;
@@ -421,6 +446,10 @@ footer > * {
   }
   footer {
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

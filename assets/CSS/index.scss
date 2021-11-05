@@ -5,6 +5,15 @@
   border: 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
+
+
+// utilities 
+
+.mobile-nav{
+  display: none;
+}
+
+
 :root {
   --pry-color: #0f1b37;
 }
@@ -252,6 +261,25 @@ footer ul li {
   }
 
 @media only screen and (max-width: 800px) {
+
+  body > *{
+    overflow-x: hidden;
+  }
+
+
+  // utilities
+.desktop-nav{
+  display: none;
+}
+
+.hide-mobile{
+  display: none;
+}
+
+.mobile-nav{
+  display: flex;
+}
+
   .toggler {
     display: block;
     position: absolute;
@@ -369,6 +397,10 @@ footer ul li {
   }
   footer{
       width: 100%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
   }
 
   

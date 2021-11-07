@@ -52,11 +52,13 @@ body {
 .navigation {
   position: absolute;
   top: 0;
-  z-index: 11;
+  z-index: 1;
+  margin-bottom: 5rem;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  border:1px rgba(255, 255, 255, 0.5);
 }
 /* The Overlay (background) */
 .overlay {
@@ -337,7 +339,35 @@ body {
 .outro-mobile {
   display: none;
 }
-
+.lawyers{
+  padding: 30px;
+  margin-top: 6rem;
+}
+.lawyers h2{
+  margin: 1.3rem auto;
+}
+.lawyer{
+  margin: 3rem auto;
+}
+.lawyer-pic{
+  padding: 10px;
+  padding: 0;
+  margin: 0;
+}
+.lawyer img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+.lawyer-info{
+  padding: 40px;
+  border: 1px solid rgba(138, 138, 138, 0.2);
+}
+.lawyer-info small{
+  opacity: .5;
+  font-size: .7rem;
+}
 .outro-text {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);

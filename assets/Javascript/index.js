@@ -1,10 +1,9 @@
 const toggle = () => {
-  const burger = document.querySelector(".toggle-btn");
-  const nav = document.querySelector(".navbar-nav");
+  const burger = document.querySelector(".toggler");
+  const nav = document.querySelector(".nav-links");
   const navItems = document.querySelectorAll(".nav-link");
-
   burger.addEventListener("click", () => {
-    nav.classList.remove("show");
+    nav.classList.toggle("show");
   });
   for (const navItem of navItems) {
     navItem.addEventListener("click", () => {
@@ -13,13 +12,3 @@ const toggle = () => {
   }
 };
 toggle();
-
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}

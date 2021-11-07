@@ -16,9 +16,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/CSS/index.css" />
+    <link rel="stylesheet" href="./assets/CSS/testimonial.css" />
   </head>
-  <body> 
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body>
+    <!-- Nav Start desktop -->
+    <nav class="nav container-fluid desktop-nav">
+        <a href="index.html" class="logo">
+          <h5>
+            Chancery <br />
+            strand & Lion <br />
+            associates
+          </h5>
+        </a>
+
+        <button class="toggler">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li>
+            <a class="active nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Our Lawyers</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Articles</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Sign-in</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile nav -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mobile-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><h5>
             Chancery <br />
@@ -32,66 +71,27 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="#">About us</a>
-              <a class="nav-link" href="#">our Lawyers</a>
+              <a class="nav-link" href="#">Our Lawyers</a>
               <a class="nav-link" href="#">Articles</a>
-              <a class="nav-link" href="#">contact us</a>
+              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="#">Sign-in</a>
             </div>
           </div>
         </div>
-      </nav> -->
+      </nav>
 
-<!-- The overlay -->
-<div class="container-fluid">
-  <nav class="navigation"><a class="navbar-brand" href="index.html"><h5>
-    Chancery <br />
-    strand & Lion <br />
-    associates
-  </h5></a>
-  <div class="navbar-nav">
-    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-    <a class="nav-link" href="#">About us</a>
-    <a class="nav-link" href="#">our Lawyers</a>
-    <a class="nav-link" href="#">Articles</a>
-    <a class="nav-link" href="#">contact us</a>
-  </div> <!-- Use any element to open/show the overlay navigation menu -->
-<button><span onclick="openNav()"><i class="fa fa-bars toggle-btn"></i></span></button>
-</nav>
- 
-
-<div id="myNav" class="overlay">
- 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-
-    <a href="#">About us</a>
-    <a href="#">our lawyers</a>
-    <a href="#">articles</a>
-    <a href="#">Contact us</a>
-  </div>
-
-</div>
-
-
-
-</div>
       <!-- Nav END -->
     <div class="intro">
-      <!-- <img class="img-fluid" src="./assets/img/teahub.io-legal-wallpaper-819891.png" alt="photo lady-justice"> -->
-        <video autoplay muted loop>
-          <source src="./assets/img/video.mp4">
-        </video>
-      <div class="intro-text">
+      <img class="img-fluid" src="./assets/img/teahub.io-legal-wallpaper-819891.png" alt="photo lady-justice">
+        <div class="intro-text">
           <h4>You are assured of Success</h4>
           <h2>We Provide Highly Reliable & Effective Legal Solutions</h2>
           <a href="#" class="btn intro-btn">Book an appointment</a>
         </div>
-      </div>  
+      </div>
+    </div>
 
-
+<br> <br>
     <!-- About us -->
     <div class="container hero">
       <h2 class="hero-title">
@@ -117,7 +117,7 @@
             We are commited for better service
             <br />
             We work with people, for people and with the full respect to the
-            law.
+            law..
           </p>
           <a href="#" class="btn">Meet our team</a>
         </div>
@@ -150,7 +150,7 @@
           <p>Area Of Practice That Can Help You To Win</p>
         </div>
       </div>
-      <div class="row area-row">
+      <div class="row area-row hide-mobile">
         <div class="col-lg-4 col-md-4 col-sm-12 area">
           <img
             src="https://img.icons8.com/external-becris-solid-becris/64/000000/external-law-literary-genres-becris-solid-becris.png"
@@ -179,10 +179,43 @@
     <!-- Practice Area END -->
 
     <!-- testimonial section start -->
+
+    <div class="main-sect">
+      <div class="container">
+        <div class="slide-container">
+          <div class="testimonial_container">
+            <div class="testmony">
+              <div class="stars">* * * * *</div>
+              <img src="https://chancerystrandandlyon.files.wordpress.com/2015/07/anogwi-anyanwu.png?w=150&h=150&crop=1" alt="">
+              <i class="title_aut">OLAKUNLE J JOLAPAMO, CEO, SHIP2SHIP
+              </i>
+              <div class="word_testimonial">
+                Operating in the Marine sector in Nigeria came with some unique challenges, the service rendered by the firm is always outstanding, not only are my Lawyers there when i need them the firm always go the extra mile, which makes us feel that personal touch. Really grateful for a professional and commendable service.
+              </div>
+            </div>
+            <div class="testmony">
+              <div class="stars">* * * * *</div>
+              <img src="https://chancerystrandandlyon.files.wordpress.com/2015/07/12647382_1100213483344843_2585546711845997361_n.jpg?w=150&h=150&crop=1" alt="">
+
+              <i class="title_aut">MR ANOGWI ANYANWU, EXECUTIVE DIRECTOR, MAINSTREET BANK</i>
+              <div class="word_testimonial">As a property investor your lawyer is your best friend. The lawyers at Chancery, Strand and Lyon Associates are highly efficient and pay attention to detail which is a core requirement in the African Real Estate Market. The team work diligently with me to resolve issues and constantly advise on the most complex legal issues.
+
+</div>
+            </div>
+          </div>
+          <br>
+          <div class="buttons">
+            <div class="btn-slide active_btn"></div>
+            <div class="btn-slide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- testimonial section END -->
+
     <!-- Group IMG Body header -->
-    <br>
+    <!-- <br> -->
 <!-- desktop outro -->
     <div class="container-fluid outro-desktop">
       <div class="outro-text text-center">
@@ -399,5 +432,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/Javascript/index.js"></script>
+    <script src="./assets/Javascript/testimonial.js"></script>
   </body>
 </html>

@@ -5,6 +5,13 @@
   border: 0;
   font-family: "Montserrat Alternates", sans-serif;
 }
+
+// utilities
+
+.mobile-nav {
+  display: none;
+}
+
 :root {
   --pry-color: #0f1b37;
 }
@@ -220,7 +227,6 @@ body {
   display: none;
 }
 
-
 .outro-text {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -245,13 +251,30 @@ footer ul li {
   padding: 10px;
 }
 
-  footer > * {
-    width: 100%;
-    padding: 0;
-    font-size: 14px;
-  }
+footer > * {
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
+}
 
 @media only screen and (max-width: 800px) {
+  body > * {
+    overflow-x: hidden;
+  }
+
+  // utilities
+  .desktop-nav {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
   .toggler {
     display: block;
     position: absolute;
@@ -267,6 +290,23 @@ footer ul li {
   .intro-text > * {
     text-align: center;
     font-size: 18px;
+  }
+  .nav {
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .nav-links {
+    height: 100vh;
+    display: none;
+    background-color: inherit;
+    margin: 1em auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .nav-links li {
+    margin: 1em auto;
   }
 
   .hero {
@@ -291,14 +331,13 @@ footer ul li {
     font-weight: 700;
   }
 
-
-  .area h4{
-      font-size: 20px;
-      font-weight: 700;
+  .area h4 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
-  .area p{
-      font-size: 16px;
+  .area p {
+    font-size: 16px;
   }
 
   .show {
@@ -309,7 +348,7 @@ footer ul li {
     display: none;
   }
   .outro-mobile {
-      display: block;
+    display: block;
     padding: 0px;
     margin-top: 0;
     position: relative;
@@ -317,9 +356,9 @@ footer ul li {
   }
 
   .outro-mobile img {
-  width: 100%;
-  opacity: 0.8;
-}
+    width: 100%;
+    opacity: 0.8;
+  }
 
   .outro-text {
     padding: 0px;
@@ -336,13 +375,13 @@ footer ul li {
     width: 100%;
   }
 
-  .blog-text h4{
-      font-size: 20px;
-      font-weight: 700;
+  .blog-text h4 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
-  .blog-text p{
-      font-size: 16px;
+  .blog-text p {
+    font-size: 16px;
   }
 
   footer > * {
@@ -350,9 +389,11 @@ footer ul li {
     padding: 0;
     font-size: 14px;
   }
-  footer{
-      width: 100%;
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-
-  
 }

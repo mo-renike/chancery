@@ -50,15 +50,11 @@ body {
   width: 100%;
 }
 .navigation {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  margin-bottom: 5rem;
   display: flex;
   width: 100%;
+  padding: 0 10px;
   align-items: center;
   justify-content: space-between;
-  border:1px rgba(255, 255, 255, 0.5);
 }
 /* The Overlay (background) */
 .overlay {
@@ -341,7 +337,7 @@ body {
 }
 .lawyers{
   padding: 30px;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 .lawyers h2{
   margin: 1.3rem auto;
